@@ -12,6 +12,9 @@ const Login = React.lazy(() => import("./pages/Login"));
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [loggedIn, setLoggedIn] = useState(false);
+  localStorage.setItem('apiKey', 'AIzaSyCrplAFEKKT9qn-mRF18qfNEbDa90NO0S8');
+  localStorage.setItem('clientId', '235560315556-1l05hu1cr0sbts74ba4g9ijvbs06fmo8.apps.googleusercontent.com');
+  localStorage.setItem('rootFolderId', '12me7P6FmgB8vYGWCKe343SaD-3SPDzks');
 
   useEffect(() => {
     (async () => {
